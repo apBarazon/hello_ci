@@ -24,6 +24,6 @@ describe('Home Page E2E Test', () => {
     const headerElement = await driver.findElement(By.tagName('h1'));
     const headerText = await headerElement.getText();
 
-    expect(headerText).toBe('Welcome to CI/CD');
+    expect(headerText).toBe('Hello DevOps');
   });
 });
