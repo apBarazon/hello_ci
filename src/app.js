@@ -6,7 +6,8 @@ app.get('/', (req, res) => {
     res.send('<h1>Welcome to CI/CD</h1>');
 });
 
-app.listen(PORT, () => {
+// Bind to '0.0.0.0' to allow container-to-container communication
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
